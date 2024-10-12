@@ -1,0 +1,110 @@
+* {
+    margin: auto;
+    background-color: #000080;
+    padding: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 80px;
+        left: 5px;
+        top: 5px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    margin: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd400; /* Set text color */
+    padding: 10px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #ffd400; /* Set hover background color */
+    color: #000080; /* Change text color on hover to contrast */
+    padding-block: 10%;
+}
+
+/* Dropdown container styling */
+nav ul li {
+    position: relative; /* This allows the dropdown to be positioned relative to the parent */
+  }
+  
+  nav ul li .dropdown {
+    display: none; /* Hide the dropdown initially */
+    position: absolute;
+    top: 100%; /* Position the dropdown right under the Services tab */
+    left: 0;
+    background-color: #000080; /* Background color for the dropdown */
+    padding: 10px;
+    list-style: none;
+  }
+  
+  nav ul li .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: #ffd400; /* Text color */
+    text-decoration: none;
+  }
+  
+  nav ul li .dropdown li a:hover {
+    background-color: #ffd400; /* Hover effect for dropdown items */
+    color: #000080; /* Text color on hover */
+  }
+  
+  /* Show dropdown when hovering over the Services tab */
+  nav ul li:hover .dropdown {
+    display: block; /* Show the dropdown when hovering */
+  }
+  
+
+
+  .content {
+    position: absolute;
+    top: 60%; /* Vertical center */
+    left: 50%; /* Horizontal center */
+    transform: translate(-50%, -50%); /* Adjusts position to truly center the element */
+    color: black;
+    text-align: center; /* Ensures text is aligned in the center */
+    background-image: url('./resources/caution-warning-tape-with-yellow-and-black-stripes-vector-52735145-removebg-preview.png'); /* Path to your image */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 200px; /* Ensure the content has height */
+    width: 100%; /* Adjust width as needed */
+    z-index: 1; /* Make sure content is visible above other elements */
+}
+
+.content p {
+    font-size: 64px;
+    font-weight: 500;
+    color: #ffd400; /* Yellow color for "Under Construction" text */
+    position: relative; /* Make sure text appears over the image */
+    z-index: 2; /* Ensure text stays above background */
+}
+
