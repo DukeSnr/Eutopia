@@ -21,6 +21,25 @@
     }
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the logo and text horizontally */
+  justify-content: center;
+}
+
+.logo {
+  width: 100px; /* Adjust size as necessary */
+}
+
+.company-name {
+  font-size: 3rem; /* Adjust font size as necessary */
+  color: #ffd400; /* Matches the nav menu color */
+  margin-top: 0.5rem; /* Space between logo and company name */
+  text-align: center;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
